@@ -1,7 +1,8 @@
-// AboutSection.tsx
+"use client";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { SOCIAL_LINKS } from "../data/data";
+import { Download } from "lucide-react";
 
 export function AboutSection() {
   return (
@@ -28,6 +29,18 @@ export function AboutSection() {
               </Link>
             ))}
           </div>
+          <Button
+            variant="outline"
+            className="p-5 text-bold"
+            onClick={() =>
+              window.open(
+                "https://drive.google.com/file/d/1xXJuP3uezBe3F6tCORc3Qxf6jZj4Za1T/view?usp=sharing",
+                "_blank"
+              )
+            }
+          >
+            <Download className="w-8 h-8"></Download> Get My Resume
+          </Button>
         </div>
       </div>
     </section>

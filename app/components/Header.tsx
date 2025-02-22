@@ -26,19 +26,6 @@ export function Header() {
             ))}
           </nav>
         </div>
-
-        <Button
-          variant="outline"
-          className="ml-auto"
-          onClick={() =>
-            window.open(
-              "https://drive.google.com/file/d/1xXJuP3uezBe3F6tCORc3Qxf6jZj4Za1T/view?usp=sharing",
-              "_blank"
-            )
-          }
-        >
-          Resume
-        </Button>
         <ThemeToggle />
       </div>
     </header>

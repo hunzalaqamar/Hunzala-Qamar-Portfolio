@@ -1,4 +1,3 @@
-// data.ts
 import { Experience, Project } from "@/components/interface/interface";
 import { Github, Linkedin, Mail } from "lucide-react";
 
@@ -139,6 +138,51 @@ export const PROJECTS: Project[] = [
     image: "/abetteryou.png",
     url: "https://abetteryouofficial.wordpress.com/",
     technologies: ["Figma", "Wordpress"],
+  },
+];
+
+export const MOBILE_APPS: Project[] = [
+  {
+    title: "EftaaPay Mobile App",
+    description:
+      "EftaaPay Mobile App transforms your smartphone into a standalone payment terminal, enabling secure and seamless on-the-go transactions. Developed in Android Studio with Firebase integration, it provides robust authentication, real-time transaction processing, and compliance with digital payment standards. The app features an intuitive, responsive design to deliver a smooth user experience while ensuring top-notch security through encryption and dedicated security APIs.",
+    image: "/eftaapaymobileapp.png", // update with your image path
+    url: "", // add a URL if available
+    technologies: [
+      "Android Studio",
+      "Kotlin",
+      "RetroFit",
+      "Payment Processing",
+      "Responsive UI",
+      "Security APIs",
+    ],
+  },
+  {
+    title: "Bikegenics",
+    description:
+      "Bikegenics is a mobile application developed in Android Studio with Firebase integration. It serves as a comprehensive platform for buying and selling bike parts. The app features a responsive design that ensures a smooth user experience across devices. Key functionalities include secure user authentication, real-time database updates, product listings with detailed information, search and filter capabilities, secure transactions, and user reviews. Bikegenics is built with performance and security in mind, making it easy for bike enthusiasts to connect and trade reliably.",
+    image: "/bikegenics.png",
+    url: "",
+    technologies: [
+      "Android Studio",
+      "Firebase",
+      "Java/Kotlin",
+      "Responsive UI",
+    ],
+  },
+  {
+    title: "Spartan",
+    description:
+      "Spartan is an advanced Android device protection app designed to safeguard user data and privacy. Developed with Android Studio and integrated with Firebase for backend support, Spartan offers features such as disabling the microphone and camera, capturing intruder selfies upon unauthorized access, and protecting device ports. Its user-friendly and responsive design ensures a seamless experience while providing robust security controls. Spartan focuses on proactive defense, alerting users in real-time and ensuring the device remains secure against potential privacy breaches.",
+    image: "/spartan.png",
+    url: "",
+    technologies: [
+      "Android Studio",
+      "Firebase",
+      "Java/Kotlin",
+      "Responsive Design",
+      "Security APIs",
+    ],
   },
 ];
 

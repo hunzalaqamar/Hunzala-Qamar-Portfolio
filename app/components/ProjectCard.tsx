@@ -1,15 +1,8 @@
+import { ProjectCardProps } from "@/components/interface/interface";
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
-import { Github, Globe } from "lucide-react";
+import { Globe } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-
-interface ProjectCardProps {
-  title: string;
-  description: string;
-  image: string;
-  link: string;
-  tags: string[];
-}
 
 export default function ProjectCard({
   title,
@@ -17,6 +10,7 @@ export default function ProjectCard({
   image,
   link,
   tags,
+  isBigImage,
 }: ProjectCardProps) {
   return (
     <Card className="overflow-hidden">
@@ -25,7 +19,9 @@ export default function ProjectCard({
           src={image || "/placeholder.svg"}
           alt={title}
           fill
-          className="object-cover transition-transform hover:scale-105"
+          className={`transition-transform hover:scale-105 ${
+            isBigImage ? "object-contain" : "object-cover"
+          }`}
         />
       </div>
       <CardContent className="p-4">

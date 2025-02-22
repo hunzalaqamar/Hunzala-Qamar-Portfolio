@@ -1,5 +1,4 @@
-// ContactSection.tsx
-import ContactForm from "./contact-form";
+import ContactForm from "./ContactForm";
 
 export function ContactSection() {
   return (
