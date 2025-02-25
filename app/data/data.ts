@@ -90,7 +90,7 @@ export const PROJECTS: Project[] = [
     description:
       "HazelsOne revolutionizes payment transactions with a seamless, one-tap solution, empowering businesses and consumers with secure, fast, and efficient digital payments. Designed for ease of use, it offers robust features, integration capabilities, and a user-friendly interface to enhance financial operations and customer experiences.",
     image: "/hazelsone.png",
-    url: "https://hazelsone.com/",
+    url: "https://hazelsone-website.vercel.app/",
     technologies: ["Next.js", "TailwindCSS", "Vercel", "React"],
   },
   {
