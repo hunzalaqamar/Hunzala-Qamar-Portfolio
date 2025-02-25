@@ -86,6 +86,14 @@ export const TECHNOLOGIES = [
 
 export const PROJECTS: Project[] = [
   {
+    title: "HazelsOne",
+    description:
+      "HazelsOne revolutionizes payment transactions with a seamless, one-tap solution, empowering businesses and consumers with secure, fast, and efficient digital payments. Designed for ease of use, it offers robust features, integration capabilities, and a user-friendly interface to enhance financial operations and customer experiences.",
+    image: "/hazelsone.png",
+    url: "https://hazelsone.com/",
+    technologies: ["Next.js", "TailwindCSS", "Vercel", "React"],
+  },
+  {
     title: "Eftaapay",
     description:
       "Eftaapay is an innovative digital payment solution designed to streamline online transactions for both businesses and consumers. Featuring a secure interface, real-time processing, and robust integration capabilities, Eftaapay simplifies financial management and enhances the overall payment experience.",
