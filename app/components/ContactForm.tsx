@@ -37,13 +37,13 @@ export default function ContactForm() {
 
       if (response.status === 200) {
         setMessage("Message sent successfully!");
-        e.currentTarget.reset();
       }
     } catch (error) {
       console.error("EmailJS error:", error);
       setMessage("Something went wrong. Please try again.");
     } finally {
       setPending(false);
+      e.currentTarget.reset();
     }
   }
 
