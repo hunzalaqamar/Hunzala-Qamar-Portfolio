@@ -151,6 +151,20 @@ export const PROJECTS: Project[] = [
 
 export const MOBILE_APPS: Project[] = [
   {
+    title: "EyeGuard Mobile App",
+    description:
+      "'EyeGuard' is a mobile app designed to help users detect eye strain, especially after long periods of screen usage. Prolonged screen time can lead to eye fatigue, which can affect vision and productivity. The app allows users to take a selfie, and it analyzes their face for signs of eye strain, such as redness or droopy eyes. Based on the analysis, the app will suggest whether to take a break or continue working. This app promotes better eye health by reminding users to rest their eyes and prevent eye strain.",
+    image: "/eyeguard.png", // update with your image path
+    url: "", // add a URL if available
+    technologies: [
+      "Android Studio",
+      "Firebase",
+      "OpenCV",
+      "Firebase API Integration",
+      "Responsive UI",
+    ],
+  },
+  {
     title: "EftaaPay Mobile App",
     description:
       "EftaaPay Mobile App transforms your smartphone into a standalone payment terminal, enabling secure and seamless on-the-go transactions. Developed in Android Studio with Firebase integration, it provides robust authentication, real-time transaction processing, and compliance with digital payment standards. The app features an intuitive, responsive design to deliver a smooth user experience while ensuring top-notch security through encryption and dedicated security APIs.",
