@@ -3,8 +3,7 @@ import { Footer } from "@/components/Footer";
 import { AboutSection } from "@/components/AboutSection";
 import { ProjectsSection } from "@/components/ProjectsSection";
 import { TechStack } from "@/app/components/TechStack";
-import { EducationSection } from "./components/EducationSection";
-import { WorkExperienceSection } from "./components/WorkExperienceSection";
+import { JourneySection } from "./components/JourneySection";
 
 export default function Page() {
   return (
@@ -12,8 +11,7 @@ export default function Page() {
       <Header />
       <main className="container px-4 md:px-6">
         <AboutSection />
-        <EducationSection />
-        <WorkExperienceSection />
+        <JourneySection />
         <ProjectsSection />
         <TechStack />
       </main>
