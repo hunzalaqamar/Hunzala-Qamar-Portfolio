@@ -1,11 +1,27 @@
 import { Experience, Project } from "@/components/interface/interface";
 import { Github, Linkedin, Mail } from "lucide-react";
+import React from "react";
+
+// Custom SVG component for the Upwork Logo using React.createElement for raw TypeScript compatibility
+const UpworkIcon = (props: React.SVGProps<SVGSVGElement>) =>
+  React.createElement(
+    "svg",
+    { viewBox: "0 0 24 24", fill: "currentColor", ...props },
+    React.createElement("path", {
+      d: "M18.561 3.281a4.855 4.855 0 00-4.825 4.855V11.23a4.773 4.773 0 00-2.483-3.418c.287-.996.536-2.128.67-3.197h-2.91a27.632 27.632 0 01-.594 3.015L6.643 3.28H3.722v7.127a3.468 3.468 0 003.468 3.468c1.912 0 3.468-1.556 3.468-3.468v-1.12c.57.876 1.345 1.547 2.27 1.95v1.272a4.855 4.855 0 004.825 4.855 4.855 4.855 0 004.825-4.855V8.136a4.855 4.855 0 00-4.825-4.855zm0 9.71a1.94 1.94 0 01-1.928-1.93v-2.93a1.94 1.94 0 011.928-1.93c1.066 0 1.928.864 1.928 1.93v2.93a1.94 1.94 0 01-1.928 1.93zM7.19 11.002a.56.56 0 01-.56-.56V6.994l1.838 4.008H7.19z"
+    })
+  );
 
 export const NAV_LINKS = [
   { href: "#about", label: "About" },
+  { href: "#work-experience", label: "Experience" },
   { href: "#projects", label: "Projects" },
-  { href: "#contact", label: "Contact" },
 ];
+
+export const EMAIL = "hunzla.qamar@gmail.com";
+
+export const RESUME_URL =
+  "https://drive.google.com/file/d/1A9gsfT70rnD9sYURQqpGoMKSoKhRgG9x/view?usp=sharing";
 
 export const SOCIAL_LINKS = [
   {
@@ -17,6 +33,11 @@ export const SOCIAL_LINKS = [
     href: "https://www.linkedin.com/in/hunzalaqamar/",
     Icon: Linkedin,
     srLabel: "LinkedIn",
+  },
+  {
+    href: "https://www.upwork.com/freelancers/~015f4c9bf94428d825?mp_source=share",
+    Icon: UpworkIcon,
+    srLabel: "Upwork",
   },
   {
     href: "mailto:hunzla.qamar@gmail.com",
@@ -86,12 +107,12 @@ export const TECHNOLOGIES = [
 
 export const PROJECTS: Project[] = [
   {
-    title: "HazelsOne",
+    title: "StudySphere",
     description:
-      "HazelsOne revolutionizes payment transactions with a seamless, one-tap solution, empowering businesses and consumers with secure, fast, and efficient digital payments. Designed for ease of use, it offers robust features, integration capabilities, and a user-friendly interface to enhance financial operations and customer experiences.",
-    image: "/hazelsone.png",
-    url: "https://hazelsone-website.vercel.app/",
-    technologies: ["Next.js", "TailwindCSS", "Vercel", "React"],
+      "A complete Learning Management System (LMS) with student and instructor roles. Instructors can manage courses, upload lessons, create quizzes, and evaluate submissions, while students track course completion progress.",
+    image: "/studysphere.png",
+    url: "https://github.com/hunzalaqamar",
+    technologies: ["React", "Express", "MongoDB", "JWT"],
   },
   {
     title: "Eftaapay",
@@ -100,6 +121,48 @@ export const PROJECTS: Project[] = [
     image: "/eftaapay.png",
     url: "https://eftaapay.com/",
     technologies: ["ReactJs, TailwindCSS.JS, Firebase, AWS"],
+  },
+  {
+    title: "TeamFlow",
+    description:
+      "A collaborative project management SaaS platform helping teams organize tasks, assign members, track progress, and communicate. Features workspaces, project/task boards with Kanban drag-and-drop, attachments, activity timelines, and role-based permissions.",
+    image: "/teamflow.png",
+    url: "https://github.com/hunzalaqamar",
+    technologies: ["React", "Node.js", "Express", "MongoDB", "Socket.io", "JWT"],
+  },
+  {
+    title: "Career Network",
+    description:
+      "Career Network is a comprehensive online platform dedicated to bridging the gap between job seekers and employers. The site offers a suite of tools including job matching, application management, and career insights, all delivered through a user-friendly interface that streamlines recruitment and career development.",
+    image: "/careernetwork.png",
+    url: "https://careernetwork.co/",
+    technologies: [
+      "ReactJs, TailwindCSS, NodeJS, Recoil.JS, Firebase, ShadeCDN, AWS",
+    ],
+  },
+  {
+    title: "BookEase",
+    description:
+      "An appointment booking and calendar scheduling application. Allows service businesses to list services, manage staff assignments, calculate real-time slot availability, and handle appointment reservation histories.",
+    image: "/bookease.png",
+    url: "https://github.com/hunzalaqamar",
+    technologies: ["React", "Express", "MongoDB", "JWT"],
+  },
+  {
+    title: "HazelsOne",
+    description:
+      "HazelsOne revolutionizes payment transactions with a seamless, one-tap solution, empowering businesses and consumers with secure, fast, and efficient digital payments. Designed for ease of use, it offers robust features, integration capabilities, and a user-friendly interface to enhance financial operations and customer experiences.",
+    image: "/hazelsone.png",
+    url: "https://hazelsone-website.vercel.app/",
+    technologies: ["Next.js", "TailwindCSS", "Vercel", "React"],
+  },
+  {
+    title: "InvoicePro",
+    description:
+      "A financial invoicing and expense management application for freelancers and small businesses. Facilitates client management, dynamic PDF invoice generation, expense logging, tax calculations, and performance metrics dashboards.",
+    image: "/invoicepro.png",
+    url: "https://github.com/hunzalaqamar",
+    technologies: ["React", "Node.js", "MongoDB", "Chart.js"],
   },
   {
     title: "Projexon Engineering Solutions",
@@ -122,14 +185,20 @@ export const PROJECTS: Project[] = [
   },
 
   {
-    title: "Career Network",
+    title: "CRMFlow",
     description:
-      "Career Network is a comprehensive online platform dedicated to bridging the gap between job seekers and employers. The site offers a suite of tools including job matching, application management, and career insights, all delivered through a user-friendly interface that streamlines recruitment and career development.",
-    image: "/careernetwork.png",
-    url: "https://careernetwork.co/",
-    technologies: [
-      "ReactJs, TailwindCSS, NodeJS, Recoil.JS, Firebase, ShadeCDN, AWS",
-    ],
+      "A Customer Relationship Management (CRM) system for tracking clients, managing sales leads, recording follow-ups, and organizing notes. Includes visual sales dashboards, task reminders, and email status updates.",
+    image: "/crmflow.png",
+    url: "https://github.com/hunzalaqamar",
+    technologies: ["React", "Node.js", "Express", "MongoDB"],
+  },
+  {
+    title: "HireHub",
+    description:
+      "A recruitment portal and Applicant Tracking System (ATS). Companies can post open roles, manage hiring pipelines, upload candidate resumes, schedule interviews, and receive automated status updates and notifications.",
+    image: "/hirehub.png",
+    url: "https://github.com/hunzalaqamar",
+    technologies: ["React", "Express", "MongoDB", "JWT", "Cloudinary"],
   },
   {
     title: "Sunhill Medical Center",
